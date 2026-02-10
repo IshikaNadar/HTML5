@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+<body>
+     <table border="red">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>price</th>
+                <th>brand</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>FROOTI</td>
+            <td>10</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>12</td>
+            <td>mno</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>15</td>
+            <td>xyz</td>
+        </tr>
+        </tbody>
+    </table>
+<hr>
+    <table border="Black">
+        <caption>Food Menu</caption><!--caption is also known as title of table-->
+        <!--table header to wrap header-->
+        <thead>
+            <tr><!--span is the area occupy by cell by def 1 row,1 colmn-->
+                <th rowspan="2">Itemm<br>mmmmmmmm</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <td>IND</td>
+                <td>USD</td>
+            </tr>
+        </thead>
+        <!--table body wraps body of table in it
+        tfooter is used to wrap the footer of table eg sum =no.-->
+        <tbody>
+        <tr>
+            <td>FROOTI</td>
+            <td>10</td>
+            <td>0.14</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>12</td>
+            <td>0.20</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>15</td>
+            <td>1.6</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="Black">
+        <caption>A test table with merged cells</caption>
+         <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red eyes</th>
+         </tr>
+         <tr>
+                <th>Height</th>
+                <th>Weight</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="Black">
+        <caption>Student Information</caption>
+      <tr>
+        <th rowspan="6">Info</th>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Address</th>
+      </tr>
+      <tr>
+        <th>City</th>
+        <th>House</th>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>Delhi</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>Mumbai</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>Kolkata</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td>Pune</td>
+        <td>4</td>
+      </tr>
+    </table>
+</body>
+</html>
