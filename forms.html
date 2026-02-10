@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+</head>
+<body>
+    <form action="/action.php/server">
+        <input type="text" placeholder ="Enter Your Name">
+        <hr>
+        <div>
+        <label>Enter username:
+        <input type="text"placeholder="username">
+        </label>
+        </div>
+        <br>
+        <label>
+        Password:
+        <input type="password"></label>
+        <hr>
+        <div>
+        <!--classical approach to label-->
+        <label for="number">ENTER Number</label>
+        <input id="number" type="number" placeholder ="Enter No. Here">
+        </div>
+        <br>
+        Time:
+        <input type="time">
+          <hr>
+        Color:
+        <input type="color">
+        <hr>
+        <input type="date"placeholder="Enter Your DOB">
+        <hr>
+        <button>submit details</button>
+        <button type="submit">Submit(default)</button>
+        <button type="reset">Empty form</button>
+        <button type="button">simple button(no fuctionality)</button>
+        <input type="submit"value="Click me">
+         <input type="button"value="Button">
+         </form>
+         <hr>
+         <form>
+            <div>
+         <label>Name: 
+         <input type="text"></label></div>
+         <span>
+         <label for="sex">Sex:</label>
+         <input id="male"type="radio"name="sex"value="male">
+         <label for="male">Male</label>
+        <input id="female" type="radio"name="sex"value="female">
+        <label for="female">Female</label>
+         </span>
+         <br>
+         <label for="country">Country:</label>
+         <select id="country"name="country" >
+            <option>Select an option</option>
+            <option value="IND">INDIA</option>
+            <option value="USA">USA</option>
+            <option value="NEP">NEPAL</option>
+            <option value="CAN">CANADA</option>
+        </select>
+        <br>
+        <label for="msg">Message:</label>
+        <br>
+        <textarea id="msg"rows="4"cols="50"> </textarea>
+         <br>
+        <input type="checkbox" id="sub">
+        <label for="sub">Subscribe?</label>
+        <br>
+        <button type="Submit">Submit</button>
+        </form>   
+        <hr>
+        <form>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Write your name">
+            <hr>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" placeholder="Wite your email">
+            <br>
+            <label for="msgg" >Message:</label>
+            <br>
+            <textarea id="msgg" type="text" rows="4" cols="40"> </textarea>
+            <br>
+            <label for="rate">Rate us our of 5:</label>
+            <br>
+            <input id="rate" type="radio" name="rate">
+            <label for="rate">1</label>
+            <br>
+            <input id="rate" type="radio" name="rate">
+            <label for="rate">2</label><br>
+            <input id="rate"type="radio">
+            <label for="rate">3</label><br>
+            <input id="rate"type="radio">
+            <label for="rate">4</label><br>
+            <input id="rate"type="radio">
+            <label for="rate">5</label>
+            <br>
+            <button>Send your message!</button>
+       </form>
+       <hr>
+       <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in utube" name="search_query">
+        <button>submit</button>
+       </form>
+       <form action="https://www.google.com/search">
+        <input type="text" placeholder="search on google" name="q">
+        <button>search</button>
+       </form>
+       <form action="https://www.reddit.com/search">
+        <input type="text" placeholder="search on reddit" name="q">
+        <button>search on reddit</button>
+       </form>
+       <hr>
+       <form action="/server">
+        <input type="checkbox" id="age" name="age">
+          <!-- <input type="checkbox" id="age" name="age"checked/> 
+           we write checked for checked box by default when open website
+           if checlbox tick then in url..age=on
+           otherwise for unchecked it is off in url-->
+        <label for="age">I am Indian</label>
+        <div>
+            <input type="radio" id="apple" name="fruit"value="apple">
+            <label for="apple">Apple</label>
+             <input type="radio" id="orange" name="fruit" value="orange">
+            <label for="orange">Orange</label>
+             <input type="radio" id="guava" name="fruit" value="guava">
+            <label for="guava">Guava</label><!--if name is diff in 3 radios,then we can select all options
+            but if name is same for all radio options,then only 1 can be chosen-->
+            </div>
+                    <button>submit</button>
+                   <hr>
+           <label id="feedback">Plzz give feedback:</label>   
+           <br>      
+          <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="write ur feedback"></textarea>
+          <hr>
+          <div>
+             <select name="profession" id="profession">
+                <option value="stu">Student</option>
+                <option value="dev"selected>Develper</option>      
+             </select>
+          </div>
+          <label for="vol">Select your Volume level</label>
+          <input type="range" id="vol" min="0" max="100" steps="10" value="50">
+          <button>SUBMIT</button>
+       </form>
+</body>
+</html>
